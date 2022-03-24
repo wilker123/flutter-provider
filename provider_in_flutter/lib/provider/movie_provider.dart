@@ -23,4 +23,9 @@ class MovieProvider with ChangeNotifier {
     _myList.add(movie);
     notifyListeners();
   }
+
+  void removeFromList(Movie movie) {
+    _myList.remove(movie);
+    notifyListeners();
+  }
 }
