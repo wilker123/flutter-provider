@@ -24,7 +24,12 @@ class _HomeScreenState extends State<HomeScreen> {
         padding: const EdgeInsets.all(15),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [],
+          children: [
+            ElevatedButton.icon(
+                onPressed: () {},
+                icon: const Icon(Icons.favorite),
+                label: Text("Ir para minha lista(${myList.length})"))
+          ],
         ),
       ),
     );
