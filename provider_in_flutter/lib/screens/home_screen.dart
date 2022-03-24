@@ -26,12 +26,16 @@ class _HomeScreenState extends State<HomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             ElevatedButton.icon(
-                onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => const MyListScreen()));
-                },
-                icon: const Icon(Icons.favorite),
-                label: Text("Ir para minha lista(${myList.length})"))
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const MyListScreen()));
+              },
+              icon: const Icon(Icons.favorite),
+              label: Text("Ir para minha lista(${myList.length})"),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.red,
+                  padding: const EdgeInsets.symmetric(vertical: 20)),
+            )
           ],
         ),
       ),
